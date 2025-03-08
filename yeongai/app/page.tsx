@@ -357,7 +357,7 @@ function TestimonialsSection() {
             </div>
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">What Our Customers Say</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Don't just take our word for it. Here's what our customers have to say about our platform.
+              Don&apos;t just take our word for it. Here&apos;s what our customers have to say about our platform.
             </p>
           </div>
         </div>
@@ -365,21 +365,21 @@ function TestimonialsSection() {
           {[
             {
               quote:
-                "This platform has completely transformed how we operate. We've seen a 30% increase in productivity since implementing it.",
+                "This platform has completely transformed how we operate. We&apos;ve seen a 30% increase in productivity since implementing it.",
               author: "Sarah Johnson",
               role: "CEO, TechStart Inc.",
               avatar: "/placeholder.svg?height=60&width=60",
             },
             {
               quote:
-                "The customer support is exceptional. Any time we've had an issue, the team has been quick to respond and resolve it.",
+                "The customer support is exceptional. Any time we&apos;ve had an issue, the team has been quick to respond and resolve it.",
               author: "Michael Chen",
               role: "Operations Manager, Global Solutions",
               avatar: "/placeholder.svg?height=60&width=60",
             },
           ].map((testimonial, index) => (
             <div key={index} className="flex flex-col justify-between rounded-lg border p-6 shadow-sm">
-              <p className="text-lg italic text-muted-foreground">"{testimonial.quote}"</p>
+              <p className="text-lg italic text-muted-foreground">&quot;{testimonial.quote}&quot;</p>
               <div className="mt-6 flex items-center gap-4">
                 {/* <Image
                   src={testimonial.avatar || "/placeholder.svg"}
@@ -431,12 +431,12 @@ function PricingSection() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Pricing that's simple,
+              Pricing that&apos;s simple,
               <br />
               predictable, and reasonable
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              We're here to help you grow your business, not your bills.
+              We&apos;re here to help you grow your business, not your bills.
               <br />
               No nickle and diming. No hidden fees.
             </p>
