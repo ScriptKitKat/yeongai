@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
+// import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ArrowRight, CheckCircle, Menu, X } from "lucide-react"
@@ -34,7 +34,7 @@ function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-          <Image src="/placeholder.svg?height=32&width=32" width={32} height={32} alt="Logo" />
+          {/* <Image src="/placeholder.svg?height=32&width=32" width={32} height={32} alt="Logo" /> */}
           <span>Company</span>
         </Link>
         <nav className="hidden md:flex gap-6">
@@ -79,7 +79,7 @@ function MobileNav() {
           <div className="fixed inset-y-0 right-0 w-full max-w-xs bg-background p-6 shadow-lg">
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-                <Image src="/placeholder.svg?height=32&width=32" width={32} height={32} alt="Logo" />
+                {/* <Image src="/placeholder.svg?height=32&width=32" width={32} height={32} alt="Logo" /> */}
                 <span>Company</span>
               </Link>
               <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
@@ -148,13 +148,13 @@ function HeroSection() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <Image
+            {/* <Image
               src="/placeholder.svg?height=550&width=550"
               width={550}
               height={550}
               alt="Hero"
               className="rounded-lg object-cover"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -226,13 +226,13 @@ function MadisonFeatures() {
                 className="flex items-center justify-center w-10 h-10 rounded-full"
                 style={{ backgroundColor: social.color }}
               >
-                <Image
+                {/* <Image
                   src={`/placeholder.svg?height=24&width=24`}
                   width={24}
                   height={24}
                   alt={social.icon}
                   className="invert"
-                />
+                /> */}
               </div>
             ))}
           </div>
@@ -241,13 +241,13 @@ function MadisonFeatures() {
         {/* Feature 1 - Show up higher on Google */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
           <div className="bg-[#5D3FD3] rounded-lg p-4 overflow-hidden">
-            <Image
+            {/* <Image
               src="/placeholder.svg?height=400&width=400"
               width={400}
               height={400}
               alt="Google search results screenshot"
               className="rounded-lg"
-            />
+            /> */}
           </div>
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">Show up higher on Google</h3>
@@ -280,26 +280,26 @@ function MadisonFeatures() {
             </Link>
           </div>
           <div className="bg-[#5D3FD3] rounded-lg p-4 overflow-hidden order-1 md:order-2">
-            <Image
+            {/* <Image
               src="/placeholder.svg?height=400&width=400"
               width={400}
               height={400}
               alt="Social media dashboard screenshot"
               className="rounded-lg"
-            />
+            /> */}
           </div>
         </div>
 
         {/* Feature 3 - Protect your reputation */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
           <div className="bg-[#5D3FD3] rounded-lg p-4 overflow-hidden">
-            <Image
+            {/* <Image
               src="/placeholder.svg?height=400&width=400"
               width={400}
               height={400}
               alt="Reputation management dashboard screenshot"
               className="rounded-lg"
-            />
+            /> */}
           </div>
           <div className="space-y-4">
             <h3 className="text-2xl font-bold">Protect your reputation</h3>
@@ -332,13 +332,13 @@ function MadisonFeatures() {
             </Link>
           </div>
           <div className="bg-[#5D3FD3] rounded-lg p-4 overflow-hidden order-1 md:order-2">
-            <Image
+            {/* <Image
               src="/placeholder.svg?height=400&width=400"
               width={400}
               height={400}
               alt="Analytics dashboard screenshot"
               className="rounded-lg"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -381,13 +381,13 @@ function TestimonialsSection() {
             <div key={index} className="flex flex-col justify-between rounded-lg border p-6 shadow-sm">
               <p className="text-lg italic text-muted-foreground">"{testimonial.quote}"</p>
               <div className="mt-6 flex items-center gap-4">
-                <Image
+                {/* <Image
                   src={testimonial.avatar || "/placeholder.svg"}
                   width={60}
                   height={60}
                   alt={testimonial.author}
                   className="rounded-full"
-                />
+                /> */}
                 <div>
                   <h4 className="font-semibold">{testimonial.author}</h4>
                   <p className="text-sm text-muted-foreground">{testimonial.role}</p>
@@ -565,7 +565,7 @@ function Footer() {
     <footer className="w-full border-t py-6 md:py-8">
       <div className="container flex flex-col items-center justify-between gap-4 md:flex-row px-4 md:px-6">
         <div className="flex items-center gap-2">
-          <Image src="/placeholder.svg?height=32&width=32" width={32} height={32} alt="Logo" />
+          {/* <Image src="/placeholder.svg?height=32&width=32" width={32} height={32} alt="Logo" /> */}
           <span className="font-bold">Company</span>
         </div>
         <p className="text-center text-sm text-muted-foreground md:text-left">
